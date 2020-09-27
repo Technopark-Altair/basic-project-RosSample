@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+.cnt{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.sz{
+    width: 15;
+}
+.fcs{}
+.fcs:focus{
+    color: darkred;
+    background-color: cornsilk;
+}
