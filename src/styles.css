@@ -3,9 +3,6 @@
     margin: auto;
     text-align: center;
 }
-.sz{
-    width: 15;
-}
 .fcs{}
 .fcs:focus{
     color: darkred;
