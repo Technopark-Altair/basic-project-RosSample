@@ -3,8 +3,10 @@
     margin: auto;
     text-align: center;
 }
-.fcs{}
 .fcs:focus{
     color: darkred;
     background-color: cornsilk;
+}
+.bcc:focus{
+    background-color: darkseagreen;
 }
