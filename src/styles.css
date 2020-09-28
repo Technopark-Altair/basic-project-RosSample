@@ -1,12 +1,13 @@
-.cnt{
+.cent{
     width: 50%;
     margin: auto;
     text-align: center;
 }
-.fcs:focus{
+.foc:focus{
     color: darkred;
-    background-color: cornsilk;
+    background-color: bisque;
 }
-.bcc:focus{
-    background-color: darkseagreen;
+.bac:hover{
+    background-color: azure;
+    border-width: 2px;
 }
