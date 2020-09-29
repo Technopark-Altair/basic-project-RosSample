@@ -22,3 +22,26 @@
     background-color: azure;
     border-width: 2px;
 }
+@media screen and (min-width: 1280px){
+    .foc{
+        font-size: 1.5vw;
+        margin: auto;
+        }
+    .bac{
+        font-size: 1.5vw;
+        margin: auto;
+        }
+    img{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 10vw;
+        height: 5vw;
+    }
+}
+div{
+    width: auto;
+    height: auto;
+}
+input{
+    width: auto;
+}
