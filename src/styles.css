@@ -1,22 +1,22 @@
 .blc{
-    background-color: dimgray;
+    background-color: cornflowerblue;
 }
 .cent{
     margin: auto;
     text-align: center;
 }
 .foc{
-    background-color: lightslategray;
+    background-color: rgb(173, 255, 241);
 }
 ::placeholder {
     color: black;
     }
 .foc:focus{
     color: darkred;
-    background-color: bisque;
+    background-color: cornsilk;
 }
 .bac{
-    background-color: lightslategray;
+    background-color: rgb(173, 255, 241);
 }
 .bac:hover{
     background-color: azure;
