@@ -5,9 +5,18 @@
     margin: auto;
     text-align: center;
 }
+.foc{
+    background-color: lightslategray;
+}
+::placeholder {
+    color: black;
+    }
 .foc:focus{
     color: darkred;
     background-color: bisque;
+}
+.bac{
+    background-color: lightslategray;
 }
 .bac:hover{
     background-color: azure;
