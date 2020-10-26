@@ -1,0 +1,21 @@
+.dispGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.headr {
+    grid-column: 2;
+    margin: 0.5%;
+    : center;
+}
+.dispCent {
+    grid-column: 2;
+    margin: 0.5%
+}
+.dispBord {
+    grid-column: 2;
+    border: 1px solid black;
+    height: fit-content;
+    margin: 0.5%;
+    padding: 2%;
+}
