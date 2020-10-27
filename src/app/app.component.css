@@ -1,21 +1,66 @@
-.dispGrid {
+.dispGrid { 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "head head head"
+      "op1 op op2"
+      "submit submit submit"
+      "res res res"
+      "err err err"; 
+    grid-template-columns: 35% 1fr 35%;
+    grid-template-rows: 80px 1fr 70px; 
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}  
+@media screen and (max-width: 768px) {
+    .dispGrid { 
+      grid-template-areas: 
+        "head"
+        "op1"
+        "op"
+        "op2"
+        "submit"
+        "res"
+        "err";
+      grid-template-rows: 80px 1fr 70px 1fr 70px;  
+      grid-template-columns: 1fr;
+   }
 }
-.headr {
-    grid-column: 2;
-    margin: 0.5%;
-    : center;
+@media screen and (max-width: 2560) {
+    .dispGrid { 
+      grid-template-areas: 
+        "head"
+        "op1"
+        "op"
+        "op2"
+        "submit"
+        "res"
+        "err";
+      grid-template-rows: 80px 1fr 70px 1fr 70px;  
+      grid-template-columns: 1fr;
+      font-size: 1vw;
+   }
 }
-.dispCent {
-    grid-column: 2;
-    margin: 0.5%
+.pageHead {
+    grid-area: head;
+    text-align: center;
 }
-.dispBord {
-    grid-column: 2;
-    border: 1px solid black;
-    height: fit-content;
-    margin: 0.5%;
-    padding: 2%;
+.firstOperand {
+    grid-area: op1;
 }
+.operator { 
+    grid-area: op;      
+}
+.secondOperand { 
+    grid-area: op2; 
+}
+.submit { 
+    grid-area: submit; 
+} 
+.result { 
+    grid-area: res; 
+} 
+.error { 
+    grid-area: err;
+} 
