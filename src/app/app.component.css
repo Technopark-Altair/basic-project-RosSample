@@ -27,21 +27,6 @@
       grid-template-columns: 1fr;
    }
 }
-@media screen and (max-width: 2560) {
-    .dispGrid { 
-      grid-template-areas: 
-        "head"
-        "op1"
-        "op"
-        "op2"
-        "submit"
-        "res"
-        "err";
-      grid-template-rows: 80px 1fr 70px 1fr 70px;  
-      grid-template-columns: 1fr;
-      font-size: 1vw;
-   }
-}
 .pageHead {
     grid-area: head;
     text-align: center;
