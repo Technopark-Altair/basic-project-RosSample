@@ -7,39 +7,42 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hmm';
-  firstOperand: number;
-  secondOperand: number;
-  operator: string;
+  inv: string;
+  first: number;
+  op: string;
+  second: number;
   result: number;
-  errorMessage: string;
-  doCalc(){
-    if (this.firstOperand != null && this.secondOperand != null && this.operator != null) {
-      if (this.operator == '-') {
-        this.result = this.firstOperand - this.secondOperand;
-        this.errorMessage = 'Нет ошибки';
-      } else if (this.operator == '+') {
-        this.result = this.firstOperand + this.secondOperand;
-        this.errorMessage = 'Нет ошибки';
-      } else if (this.operator == '/') {
-        if (this.secondOperand == 0) {
-          this.errorMessage = 'На ноль делить нельзя';
-          this.result = null;
-        } else {
-          this.result = this.firstOperand / this.secondOperand
-          this.errorMessage = 'Нет ошибки';
+  errorMsg: string;
+  doThing() {
+    if (((this.first == 1) || (this.first == 0)) && ((this.second == 1) || (this.second == 0))) {
+      if (this.first != null && this.op != null && this.second != null) {
+        if (this.op == '&&') {
+          if (this.first == 1 && this.second == 1) {
+            this.result = 1
+            this.errorMsg = 'Ошибок нет'
+          } else {
+            this.result = 0
+            this.errorMsg = 'Ошибок нет'
+          }
+        } else if (this.op == '||') {
+          if ((this.first + this.second == 1) || (this.first + this.second == 2)) {
+            this.result = 1
+            this.errorMsg = 'Ошибок нет'
+          } else {
+            this.result = 0
+            this.errorMsg = 'Ошибок нет'
+          }
         }
-      } else if (this.operator == '*') {
-        this.result = this.firstOperand * this.secondOperand;
-        this.errorMessage = 'Нет ошибки';
       }
     } else {
-      if (this.firstOperand == null) {
-        this.errorMessage = 'Нет первого операнда';
-      } else if (this.secondOperand == null) {
-        this.errorMessage = 'Нет второго операнда';
-      } else if (this.operator == null) {
-        this.errorMessage = 'Нет оператора действия';
-      }
+      this.result = null
+      this.errorMsg = 'Число больше 1 или меньше 0'
+    } if (this.inv == '!') {
+        if (this.result == 1) {
+          this.result = 0
+        } else {
+          this.result = 1
+        }
     }
   }
 }

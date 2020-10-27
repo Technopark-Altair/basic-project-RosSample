@@ -1,14 +1,16 @@
 <div class="dispGrid">
-    <h1 class="pageHead">Калькулятор</h1>
-    <input [(ngModel)]="firstOperand" type="number" class="firstOperand">
-    <select [(ngModel)]="operator" class="operator">
-        <option value="-">-</option>
-        <option value="+">+</option>
-        <option value="/">/</option>
-        <option value="*">*</option>
+    <h1 class="pageHead">Вычисление логических выражений</h1>
+    <select [(ngModel)]="inv" class="inv">
+        <option value="!">!</option>
+        <option value="s"></option>
     </select>
-    <input [(ngModel)]="secondOperand" type="number" class="secondOperand">
-    <input (click)="doCalc()" type="submit" value="Подтвердить" class="button" class="submit">
+    <input [(ngModel)]="first" type="number" class="first">
+    <select [(ngModel)]="op" class="operator">
+        <option value="&&">&&</option>
+        <option value="||">||</option>
+    </select>
+    <input [(ngModel)]="second" type="number" class="second">
+    <input (click)="doThing()" type="submit" value="Подтвердить" class="button" class="submit">
     <p class="result">Результат: {{ result }}</p>
-    <p class="error">Текст ошибки: {{ errorMessage }}</p>
+    <p class="error">Текст ошибки: {{ errorMsg }}</p>
 </div>
