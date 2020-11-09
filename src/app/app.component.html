@@ -1,16 +1,4 @@
-<div class="dispGrid">
-    <h1 class="pageHead">Вычисление логических выражений</h1>
-    <select [(ngModel)]="inv" class="inv">
-        <option value="!">!</option>
-        <option value="s"></option>
-    </select>
-    <input [(ngModel)]="first" type="number" class="first">
-    <select [(ngModel)]="op" class="operator">
-        <option value="&&">&&</option>
-        <option value="||">||</option>
-    </select>
-    <input [(ngModel)]="second" type="number" class="second">
-    <input (click)="doThing()" type="submit" value="Подтвердить" class="button" class="submit">
-    <p class="result">Результат: {{ result }}</p>
-    <p class="error">Текст ошибки: {{ errorMsg }}</p>
+<div class="dGrid">
+    <app-mainpage></app-mainpage>
+    <router-outlet></router-outlet>
 </div>

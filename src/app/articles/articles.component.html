@@ -1,0 +1,12 @@
+<div *ngIf='logged'>
+    <form>
+        <p><input [(ngModel)]='event' name="event" placeholder="Событие"></p>
+        <p><input [(ngModel)]='date1' type="date" name="date1" placeholder="Дата"></p>
+        <p><input [(ngModel)]='date2' type="date" name="date2" placeholder="Дата"></p>
+        <p><textarea cols="40" rows="3" [(ngModel)]='text' name="text" placeholder=""></textarea></p>
+        <p><input (click)="addText()" type="submit" value="Отправить"></p>
+    </form>
+</div>
+<div *ngIf='!logged'>
+    <p>Сперва войдите</p>
+</div>
